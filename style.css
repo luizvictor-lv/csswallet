@@ -19,13 +19,7 @@ a {
   text-decoration: none;
 }
 
-button {
-  border: 0;
-  outline: none;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-}
+
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
