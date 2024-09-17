@@ -40,14 +40,31 @@ button {
   opacity: 0.85;
   height: 65px;
   z-index: 12;
+  padding: 0 1rem; /* Controle de padding */
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Distribuição padrão */
   height: 64px;
   align-items: center;
+  max-width: 1200px; /* Limita o tamanho para telas grandes */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 0 2rem; /* Espaço interno para o conteúdo */
 }
+
+/* Ajustes para telas maiores */
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding: 0 3rem; /* Aumenta o padding para telas maiores */
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar-container {
+    max-width: 1400px; /* Aumenta o limite do container para telas maiores */
+    justify-content: space-around; /* Deixa os itens mais centralizados */
+  }
 
 .menu-items {
   order: 2;
